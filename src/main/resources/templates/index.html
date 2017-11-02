@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Przykład Tymeleaf</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<div style="background: #90a5cc; padding: 20px;">
+    <h1>Schronisko Reksio i Klakier</h1>
+</div>
+<h2>Zwierzaki szukające domu</h2>
+
+<h3 th:text="${test}"></h3>
+
+<p th:each="elem: ${lista}" th:text="${elem}" />
+
+</body>
+
+</html>

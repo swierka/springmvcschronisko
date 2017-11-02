@@ -1,0 +1,24 @@
+package com.javastart.schronisko;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+@Controller
+public class AnimalController {
+
+    @Autowired AnimalRepository animalRepository;
+
+    @RequestMapping("/zwierzak")
+    public String singleAnimal(@RequestParam Long id, Model model) {
+
+        Animal animal = animalRepository.findById(id);
+
+        model.addAttribute("animal", animal);
+
+        return "animal";
+    }
+
+}

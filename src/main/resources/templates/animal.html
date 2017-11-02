@@ -8,13 +8,7 @@
 <div style="background: #90a5cc; padding: 20px;">
     <h1>Schronisko Reksio i Klakier</h1>
 </div>
-<h2>Zwierzaki szukające domu</h2>
-
-<a href="http://javastart.pl">SUPER STRONA</a>
-
-<p th:each="animal: ${animalList}">
-    <a th:href="${'/zwierzak?id=' + animal.id}" th:text="${animal.name}" />
-</p>
+<h2 th:text="${animal.name}">Reksio</h2>
 
 </body>
 

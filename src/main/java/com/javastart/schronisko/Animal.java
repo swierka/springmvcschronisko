@@ -5,6 +5,9 @@ public class Animal {
     private Long id;
     private String name;
 
+    public Animal() {
+    }
+
     public Animal(long id, String name) {
         this.id = id;
         this.name = name;

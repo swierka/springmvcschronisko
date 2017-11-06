@@ -19,7 +19,7 @@ public class AnimalRepository {
         animals.add(new Animal(3, "Mruczek"));
         animals.add(new Animal(1,"Reksio"));
         animals.add(new Animal(4, "Kasztan"));
-        animals.add(new Animal(6, "Szczurek"));
+        animals.add(new Animal(50, "Szczurek"));
     }
 
     public List<Animal> getAll() {
@@ -29,5 +29,11 @@ public class AnimalRepository {
     public Animal findById(Long id) {
         // TODO zwróć poprawnego zwierzaka
         return animals.get(0);
+    }
+
+    public void addAnimal(Animal wypelnionyZwierzak) {
+
+
+        animals.add(wypelnionyZwierzak);
     }
 }
